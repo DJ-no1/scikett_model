@@ -4,7 +4,7 @@ import pickle
 from sklearn.linear_model import LinearRegression
 
 # Load dataset and train model
-df = pd.read_csv('../resource/Salary_dataset.csv')
+df = pd.read_csv('./Salary_dataset.csv')
 model = LinearRegression()
 model.fit(df[['YearsExperience']], df.Salary)
 
